@@ -1,0 +1,284 @@
+$white_color : #FFFFFF;
+$assistant_font : 'Assistant',
+sans-serif;
+$playFairDisplay_font : 'Playfair Display',
+serif;
+$dark_blue_color_primary :#071C4D;
+$dark_blue_color_primary_button :#03045e;
+$dark_blue_color_primary_button_hover :#14213d;
+$dark_blue_color_secondary : #051334;
+$grey_color_bg : #E4E6EB;
+$grey_color_font : #B1B1B1;
+$light_grey_color_button : #F2F2F2;
+$dark_grey_color_button : #757575;
+$orange_color : #fb8500;
+$orange_color_hover : #c26b09;
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    margin-bottom: 150px;
+}
+
+// Header Background
+.section-details-header {
+    margin-top: -80px;
+    height: 310px;
+    background: $grey_color_bg;
+}
+
+.section-details-content {
+    margin-top: -200px;
+
+    // Breadcrumb
+    .breadcrumb {
+        display: inline-flex;
+        background: $light_grey_color_button;
+        padding: 20px;
+        border-radius: 30px;
+        color: $dark_blue_color_primary;
+        margin-bottom: 50px;
+
+        .breadcrumb-item {
+            &.active {
+                color: $dark_blue_color_primary;
+                font-weight: bold;
+            }
+        }
+    }
+
+    // Card Details
+    .card {
+        padding: 30px;
+        border-radius: 12px;
+
+        h3,
+        h4,
+        h5 {
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        p {
+            color: $grey_color_font;
+            font-size: 18px;
+        }
+    }
+
+    .card-details {
+
+        .features {
+            margin-top: 30px;
+
+            img {
+                width: 45px;
+                height: 45px;
+                background-size: cover;
+                object-fit: cover;
+                float: left;
+            }
+
+            h5 {
+                margin-bottom: 0px;
+                color: $dark_blue_color_primary;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .description {
+                margin-left: 10px;
+                float: left;
+                overflow: hidden;
+            }
+
+            .border-left {
+                color: $dark_grey_color_button;
+                border-radius: 5px;
+            }
+        }
+
+        .member-checkout {
+            border: none;
+
+            .member-photo {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    background-size: cover;
+                }
+            }
+        }
+
+        .add-member {
+            .btn-add-now {
+                padding-left: 20px;
+                padding-right: 20px;
+                color: $white_color;
+                background-color: $dark_blue_color_primary_button;
+
+                &:hover {
+                    color: $white_color;
+                    background-color: $dark_blue_color_primary_button_hover;
+                }
+            }
+        }
+
+        .note {
+            width: 80%;
+            padding: 12px 12px 0px 18px;
+            background-color: $grey_color_bg;
+            border-radius: 12px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Gallery
+    .gallery {
+        margin-bottom: 12px;
+
+        .xzoom-container {
+
+            .xzoom {
+                width: 660px;
+                height: 350px;
+                object-fit: cover;
+                background-size: cover;
+                box-shadow: none;
+                border-radius: 6px;
+                margin-bottom: 12px;
+            }
+
+            .xactive {
+                border: 4px solid #1ABC9C;
+                box-shadow: none;
+            }
+        }
+
+        .xzoom-thumbnails {
+
+            .xzoom-gallery {
+                box-shadow: none;
+                border-radius: 6px;
+            }
+
+            .xactive {
+                border: 4px solid #1ABC9C;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .card-informations {
+        img {
+            margin-right: 8px;
+
+        }
+
+        th {
+            text-align: left;
+            font-weight: 400;
+            color: $dark_blue_color_primary;
+        }
+
+        td {
+            text-align: right;
+            color: $grey_color_font;
+        }
+
+        .payment-instructions {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .payment-method {
+            td {
+                color: $dark_blue_color_primary;
+                font-size: 16px;
+            }
+
+            .bank-item {
+                .bank-icon {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    float: left;
+                }
+
+                .description {
+                    margin-left: 10px;
+                    float: left;
+
+                    h5 {
+                        font-size: 16px;
+                        margin-bottom: 0px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+
+        .text-blue {
+            font-weight: bold;
+            color: $dark_blue_color_primary;
+        }
+
+        .text-orange {
+            font-weight: bold;
+            color: $orange_color;
+        }
+    }
+
+
+    .btn-join {
+        width: 85%;
+        padding: 10px;
+        color: $white_color;
+        background-color: $orange_color;
+        border-radius: 12px;
+        font-weight: bold;
+
+        &:hover {
+            color: $white_color;
+            background-color: $orange_color_hover;
+            font-weight: bold;
+        }
+    }
+
+    .btn-cancel {
+        width: 70%;
+        padding: 10px;
+        color: $grey_color_font;
+        background-color: $light_grey_color_button;
+        border-radius: 12px;
+
+        &:hover {
+            color: $light_grey_color_button;
+            background-color: $dark_grey_color_button;
+        }
+    }
+
+}

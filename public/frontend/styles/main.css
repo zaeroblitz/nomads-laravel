@@ -1,0 +1,408 @@
+body {
+  background-color: #FFFFFF;
+  font-family: "Assistant", sans-serif;
+  color: #071C4D;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand img {
+  max-height: 50px;
+  max-width: 188px;
+}
+
+.btn-login {
+  background-color: #03045e;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.btn-login:hover {
+  background-color: #14213d;
+  color: #FFFFFF;
+}
+
+.btn-desktop {
+  margin-top: -10px !important;
+  margin-bottom: -8px !important;
+  margin-right: -18px !important;
+  height: 78px;
+  width: 120px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #071C4D;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #071C4D !important;
+}
+
+header {
+  margin-top: -80px;
+  height: 650px;
+  padding-top: 180px;
+  padding-bottom: 165px;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/header@2x.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/header@2x.png);
+  color: #FFFFFF;
+}
+
+header h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+header p {
+  font-size: 22px;
+}
+
+header .btn-get-started {
+  background-color: #fb8500;
+  color: #FFFFFF;
+}
+
+header .btn-get-started:hover {
+  background-color: #c26b09;
+  color: #FFFFFF;
+}
+
+.section-stats {
+  position: relative;
+  z-index: 99;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.75);
+}
+
+.section-stats .stats-detail {
+  padding-top: 16px;
+}
+
+.section-stats .stats-detail h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.section-stats .stats-detail p {
+  font: 24px;
+  font-weight: lighter;
+}
+
+@media (max-width: 575px) {
+  header h1 {
+    font-size: 40px;
+  }
+  header p {
+    font-size: 20px;
+  }
+  .section-stats {
+    margin-top: -40px;
+  }
+  .section-stats .stats-detail h2 {
+    font-size: 20px;
+  }
+  .section-stats .stats-detail p {
+    font-size: 14px;
+  }
+}
+
+.section-popular {
+  position: relative;
+  z-index: 0;
+  background-color: #051334;
+  min-height: 540px;
+  margin-top: -50px;
+  margin-bottom: -230px;
+  color: #FFFFFF;
+}
+
+.section-popular .section-popular-heading {
+  margin-top: 150px;
+}
+
+.section-popular h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section-popular p {
+  font-size: 18px;
+}
+
+@media (max-width: 575px) {
+  .section-popular .section-popular-heading {
+    margin-top: 100px;
+  }
+}
+
+.section-popular-content .section-popular-travel {
+  color: #FFFFFF;
+}
+
+.section-popular-content .section-popular-travel .card-travel {
+  padding: 30px;
+  height: 380px;
+  background-size: cover;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-country {
+  font-size: 18px;
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-location {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.section-popular-content .section-popular-travel .card-travel .btn-travel-details {
+  color: #FFFFFF;
+  background-color: #fb8500;
+}
+
+.section-popular-content .section-popular-travel .card-travel .btn-travel-details:hover {
+  color: #FFFFFF;
+  background-color: #c26b09;
+}
+
+@media (max-width: 575px) {
+  .section-popular-content .section-popular-travel .card-travel {
+    margin: 20px;
+  }
+}
+
+.section-networks {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-networks h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section-networks p {
+  font-size: 18px;
+}
+
+.section-networks .img-partner {
+  background-size: cover;
+  max-width: 100%;
+  margin-right: 12px;
+}
+
+@media (max-width: 991px) {
+  .section-networks .section-networks-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-networks .section-networks-header h2 {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  .section-networks .section-networks-header p {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  .section-networks .section-networks-partner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-networks .section-networks-partner .img-partner {
+    background-size: cover;
+    width: 100px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-networks h2 {
+    font-size: 22px;
+  }
+  .section-networks p {
+    font-size: 12px;
+  }
+  .section-networks .img-partner {
+    background-size: cover;
+    width: 70px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-networks .section-networks-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-networks .section-networks-header h2 {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  .section-networks .section-networks-header p {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  .section-networks .section-networks-partner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-networks .section-networks-partner .img-partner {
+    background-size: cover;
+    width: 70px;
+    margin-right: 8px;
+  }
+}
+
+.section-testimonial {
+  position: relative;
+  height: 510px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#F7F9FF));
+  background: linear-gradient(white, #F7F9FF);
+}
+
+.section-testimonial .section-testimonial-header {
+  margin: auto;
+  text-align: center;
+  color: #071C4D;
+}
+
+.section-testimonial .section-testimonial-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section-testimonial .section-testimonial-header p {
+  font-size: 18px;
+}
+
+.section-testimonial-content {
+  margin-top: -380px;
+}
+
+.section-testimonial-content .section-testimonial-card {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  color: #6E6E6E;
+  text-align: center;
+  outline: none;
+}
+
+.section-testimonial-content .section-testimonial-card .card-profile-pic {
+  margin-top: 30px;
+}
+
+.section-testimonial-content .section-testimonial-card .card-profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  image-resolution: inherit;
+}
+
+.section-testimonial-content .section-testimonial-card .card-name {
+  color: #071C4D;
+  margin-top: 18px;
+  font-size: 22px;
+}
+
+.section-testimonial-content .section-testimonial-card .card-message {
+  margin: 0px 24px 30px 24px;
+  min-height: 150px;
+  max-height: 154px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.section-testimonial-content .section-testimonial-card .card-footer {
+  padding: 26px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-buttons {
+  margin-bottom: 50px;
+}
+
+.section-buttons .btn-need-help {
+  background-color: #F2F2F2;
+  color: #C3C3C3;
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+}
+
+.section-buttons .btn-need-help:hover {
+  background-color: #E4E6EB;
+  color: #C3C3C3;
+  font-weight: bold;
+}
+
+.section-buttons .btn-get-started {
+  background-color: #fb8500;
+  color: white;
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+}
+
+.section-buttons .btn-get-started:hover {
+  background-color: #c26b09;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  padding: 50px;
+}
+/*# sourceMappingURL=main.css.map */

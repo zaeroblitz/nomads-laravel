@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomads</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/styles/main.css" />
+    <link rel="stylesheet" href="frontend/styles/details.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#" class="navbar-brand">
+                <img src="frontend/images/logo_nomads@2x.png" alt="Logo Nomads" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Paket Travel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle 
+            id=" navbardrop" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Testimonial</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Button -->
+                <form action="#" class="form-inline d-sm-block d-md-none">
+                    <button class="btn btn-login btn-login my-2 my-sm-0">Login</button>
+                </form>
+
+                <!-- Desktop Button -->
+                <form action="#" class="form-inline my-2 my-lg-0 d-none d-md-block">
+                    <button class="btn btn-login btn-desktop btn-navbar-right my-2 my-sm-0 px-4">Login</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="section-details-header">
+        </section>
+
+        <section class="section-details-content">
+            <!-- Breadcrumb -->
+            <div class="container">
+                <div class="row">
+                    <div class="col p-3">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Paket Travel </li>
+                                <li class="breadcrumb-item active">Details</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card card-details">
+
+                            <!-- Card Header -->
+                            <h3>Nusa Penida</h3>
+                            <p>Republic of Indonesia Raya</p>
+
+                            <!-- Gallery -->
+                            <div class="gallery">
+                                <div class="xzoom-container">
+                                    <img src="frontend/images/NusaPenida1Original.png" class="xzoom" id="xzoom-default"
+                                        xoriginal="frontend/images/NusaPenida1Original.png">
+                                </div>
+                                <div class="xzoom-thumbnails">
+                                    <a href="frontend/images/NusaPenida1Original.png">
+                                        <img src="frontend/images/NusaPenida1Preview.png" class="xzoom-gallery"
+                                            width="120" xpreview="frontend/images/NusaPenida1Original.png">
+                                    </a>
+                                    <a href="frontend/images/NusaPenida2Original.jpg">
+                                        <img src="frontend/images/NusaPenida2Preview.png" class="xzoom-gallery"
+                                            width="120" xpreview="frontend/images/NusaPenida2Original.jpg">
+                                    </a>
+                                    <a href="frontend/images/NusaPenida3Original.jpg">
+                                        <img src="frontend/images/NusaPenida3Preview.png" class="xzoom-gallery"
+                                            width="120" xpreview="frontend/images/NusaPenida3Original.jpg">
+                                    </a>
+                                    <a href="frontend/images/NusaPenida4Original.jpg">
+                                        <img src="frontend/images/NusaPenida4Preview.png" class="xzoom-gallery"
+                                            width="120" xpreview="frontend/images/NusaPenida4Original.jpg">
+                                    </a>
+                                    <a href="frontend/images/NusaPenida5Original.jpg">
+                                        <img src="frontend/images/NusaPenida5Preview.png" class="xzoom-gallery"
+                                            width="120" xpreview="frontend/images/NusaPenida5Original.jpg">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Card Detail -->
+                            <h4>Tentang Wisata</h4>
+                            <p>
+                                Nusa Penida is an island southeast of Indonesia’s island Bali and a district of
+                                Klungkung
+                                Regency that includes the neighbouring small island of Nusa Lembongan. The Badung
+                                Strait separates the island and Bali. The interior of Nusa Penida is hilly with a
+                                maximum
+                                altitude of 524 metres. It is drier than the nearby island of Bali.
+                            </p>
+                            <p>
+                                Bali and a district of Klungkung Regency that includes the neighbouring small island of
+                                Nusa Lembongan. The Badung Strait separates the island and Bali.
+                            </p>
+
+                            <!-- Card Icon -->
+                            <div class="features row justify-content-center align-items-center">
+                                <div class="col-md-4 p-3">
+                                    <img src="frontend/images/ic_event.png" alt="Icon Event">
+                                    <div class="description">
+                                        <h5>Featured Event</h5>
+                                        <p>Tari Kecak</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 p-3">
+                                    <img src="frontend/images/ic_language.png" alt="Icon Language">
+                                    <div class="description">
+                                        <h5>Language</h5>
+                                        <p>Bahasa Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 p-3">
+                                    <img src="frontend/images/ic_foods.png" alt="Icon Foods">
+                                    <div class="description">
+                                        <h5>Foods</h5>
+                                        <p>Local Foods</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-2 mt-sm-2 mt-md-2 mt-lg-0">
+                        <div class="card card-informations">
+
+                            <!-- Card Members -->
+                            <h4>Members are going</h4>
+                            <div class="members-photo">
+                                <img src="frontend/images/Member1.png" width="40" height="40" class="rounded-circle">
+                                <img src="frontend/images/Member2.png" width="40" height="40" class="rounded-circle">
+                                <img src="frontend/images/Member3.png" width="40" height="40" class="rounded-circle">
+                                <img src="frontend/images/Member4.png" width="40" height="40" class="rounded-circle">
+                                <img src="frontend/images/MemberOthers.png" width="40" height="40"
+                                    class="rounded-circle">
+                            </div>
+
+                            <hr>
+
+                            <!-- Trip Informations -->
+                            <h4>Trip Informations</h4>
+                            <table>
+                                <tr>
+                                    <th width="50%">Date of Departure</th>
+                                    <td width="50% text-right">22 Aug, 2021</td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Duration</th>
+                                    <td width="50% text-right">4D 3N</td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Type</th>
+                                    <td width="50% text-right">Open Trip</td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Price</th>
+                                    <td width="50% text-right">$80,00 / person</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="join-container justify-content-center row mt-2">
+                            <a href="checkout.html" class="btn btn-join">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <hr>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center text-left">
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-head">
+            <h4>FEATURES</h4>
+          </div>
+          <div class="footer-content">
+            <p>Reviews</p>
+            <p>Community</p>
+            <p>Social Media Kit</p>
+            <p>Affiliate</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-head">
+            <h4>Account</h4>
+          </div>
+          <div class="footer-content">
+            <p>Refund</p>
+            <p>Security</p>
+            <p>Rewards</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-head">
+            <h4>Company</h4>
+          </div>
+          <div class="footer-content">
+            <p>Career</p>
+            <p>Help Center</p>
+            <p>Media</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-head">
+            <h4>Get Connected</h4>
+          </div>
+          <div class="footer-content">
+            <p>Jawa Barat</p>
+            <p>Indonesia</p>
+            <p>0813-8393-2663</p>
+            <p>support@nomads.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <hr>
+
+    <!-- Copyright -->
+    <div class="text-center">
+        <div class="container">
+            2021 Copyright Nomads • All rights reserved • Made in Depok
+        </div>
+    </div>
+
+    <script src="frontend/libraries/jquery-3.6.0.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 500,
+                title: false,
+                tint: '#333',
+                Xoffset: 15,
+            });
+        });
+    </script>
+
+</body>
+
+</html>

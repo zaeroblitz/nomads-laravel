@@ -1,0 +1,53 @@
+$dark_blue_color_primary :#071C4D;
+$dark_blue_color_primary_button :#03045e;
+$dark_blue_color_primary_button_hover :#14213d;
+$grey_color_font : #B1B1B1;
+$assistant_font : 'Assistant',
+sans-serif;
+
+body {
+    background-color: white;
+    font-family: $assistant_font;
+}
+
+.section-success-image {
+    margin: 100px auto 12px auto;
+    width: 266px;
+    height: 266px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.section-success-text {
+    margin: auto;
+    text-align: center;
+
+    h3 {
+        color: $dark_blue_color_primary;
+        font-size: 26;
+        font-weight: 600;
+    }
+
+    p {
+        color: $grey_color_font;
+        font-size: 18;
+        font-weight: lighter;
+    }
+}
+
+.section-success-button {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    .btn-homepage {
+        color: white;
+        background-color: $dark_blue_color_primary_button;
+        font-size: 20px;
+
+        &:hover {
+            color: white;
+            background-color: $dark_blue_color_primary_button_hover;
+        }
+    }
+}

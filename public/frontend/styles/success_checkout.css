@@ -1,0 +1,48 @@
+body {
+  background-color: white;
+  font-family: "Assistant", sans-serif;
+}
+
+.section-success-image {
+  margin: 100px auto 12px auto;
+  width: 266px;
+  height: 266px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-success-text {
+  margin: auto;
+  text-align: center;
+}
+
+.section-success-text h3 {
+  color: #071C4D;
+  font-size: 26;
+  font-weight: 600;
+}
+
+.section-success-text p {
+  color: #B1B1B1;
+  font-size: 18;
+  font-weight: lighter;
+}
+
+.section-success-button {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.section-success-button .btn-homepage {
+  color: white;
+  background-color: #03045e;
+  font-size: 20px;
+}
+
+.section-success-button .btn-homepage:hover {
+  color: white;
+  background-color: #14213d;
+}
+/*# sourceMappingURL=success_checkout.css.map */

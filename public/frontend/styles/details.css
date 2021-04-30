@@ -1,0 +1,247 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: 150px;
+}
+
+.section-details-header {
+  margin-top: -80px;
+  height: 310px;
+  background: #E4E6EB;
+}
+
+.section-details-content {
+  margin-top: -200px;
+}
+
+.section-details-content .breadcrumb {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #F2F2F2;
+  padding: 20px;
+  border-radius: 30px;
+  color: #071C4D;
+  margin-bottom: 50px;
+}
+
+.section-details-content .breadcrumb .breadcrumb-item.active {
+  color: #071C4D;
+  font-weight: bold;
+}
+
+.section-details-content .card {
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.section-details-content .card h3,
+.section-details-content .card h4,
+.section-details-content .card h5 {
+  font-weight: 600;
+}
+
+.section-details-content .card h3 {
+  font-size: 26px;
+}
+
+.section-details-content .card h4 {
+  font-size: 20px;
+}
+
+.section-details-content .card h5 {
+  font-size: 18px;
+}
+
+.section-details-content .card p {
+  color: #B1B1B1;
+  font-size: 18px;
+}
+
+.section-details-content .card-details .features {
+  margin-top: 30px;
+}
+
+.section-details-content .card-details .features img {
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+}
+
+.section-details-content .card-details .features h5 {
+  margin-bottom: 0px;
+  color: #071C4D;
+}
+
+.section-details-content .card-details .features p {
+  font-size: 14px;
+}
+
+.section-details-content .card-details .features .description {
+  margin-left: 10px;
+  float: left;
+  overflow: hidden;
+}
+
+.section-details-content .card-details .features .border-left {
+  color: #757575;
+  border-radius: 5px;
+}
+
+.section-details-content .card-details .member-checkout {
+  border: none;
+}
+
+.section-details-content .card-details .member-checkout .member-photo img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.section-details-content .card-details .add-member .btn-add-now {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FFFFFF;
+  background-color: #03045e;
+}
+
+.section-details-content .card-details .add-member .btn-add-now:hover {
+  color: #FFFFFF;
+  background-color: #14213d;
+}
+
+.section-details-content .card-details .note {
+  width: 80%;
+  padding: 12px 12px 0px 18px;
+  background-color: #E4E6EB;
+  border-radius: 12px;
+}
+
+.section-details-content .card-details .note p {
+  font-size: 14px;
+}
+
+.section-details-content .gallery {
+  margin-bottom: 12px;
+}
+
+.section-details-content .gallery .xzoom-container .xzoom {
+  width: 660px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.section-details-content .gallery .xzoom-container .xactive {
+  border: 4px solid #1ABC9C;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section-details-content .gallery .xzoom-thumbnails .xzoom-gallery {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 6px;
+}
+
+.section-details-content .gallery .xzoom-thumbnails .xactive {
+  border: 4px solid #1ABC9C;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section-details-content .card-informations img {
+  margin-right: 8px;
+}
+
+.section-details-content .card-informations th {
+  text-align: left;
+  font-weight: 400;
+  color: #071C4D;
+}
+
+.section-details-content .card-informations td {
+  text-align: right;
+  color: #B1B1B1;
+}
+
+.section-details-content .card-informations .payment-instructions p {
+  font-size: 14px;
+}
+
+.section-details-content .card-informations .payment-method td {
+  color: #071C4D;
+  font-size: 16px;
+}
+
+.section-details-content .card-informations .payment-method .bank-item .bank-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  float: left;
+}
+
+.section-details-content .card-informations .payment-method .bank-item .description {
+  margin-left: 10px;
+  float: left;
+}
+
+.section-details-content .card-informations .payment-method .bank-item .description h5 {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.section-details-content .card-informations .payment-method .bank-item .description p {
+  font-size: 14px;
+}
+
+.section-details-content .card-informations .text-blue {
+  font-weight: bold;
+  color: #071C4D;
+}
+
+.section-details-content .card-informations .text-orange {
+  font-weight: bold;
+  color: #fb8500;
+}
+
+.section-details-content .btn-join {
+  width: 85%;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: #fb8500;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.section-details-content .btn-join:hover {
+  color: #FFFFFF;
+  background-color: #c26b09;
+  font-weight: bold;
+}
+
+.section-details-content .btn-cancel {
+  width: 70%;
+  padding: 10px;
+  color: #B1B1B1;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+}
+
+.section-details-content .btn-cancel:hover {
+  color: #F2F2F2;
+  background-color: #757575;
+}
+/*# sourceMappingURL=details.css.map */
