@@ -8,6 +8,6 @@ class DetailController extends Controller
 {
     public function index(Request $request)
     {
-        return view('pages.details');
+        return view('pages.frontend.details');
     }
 }

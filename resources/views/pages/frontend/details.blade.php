@@ -2,9 +2,10 @@
 
 @section('title', 'Paket Travel Detail')
 
-@section('additonal-styles')
-    <link rel="stylesheet" href="{{ url('frontend/styles/details.css') }}">
-@endsection
+    @push('prepend-style')
+        <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+        <link rel="stylesheet" href="{{ url('frontend/styles/details.css') }}">
+    @endpush
 
 @section('content')
     <main>
@@ -155,7 +156,7 @@
     </main>
 @endsection
 
-@section('addtional-scritps')
+@push('addon-script')
     <script src="{{ url('frontend/libraries/xzoom/xzoom.min.js') }}"></script>
     <script>
         $(document).ready(function() {
@@ -168,4 +169,4 @@
         });
 
     </script>
-@endsection
+@endpush
