@@ -71,7 +71,7 @@
                                 DERATAN, BALI
                             </div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
@@ -88,7 +88,7 @@
                                 BROMO, MALANG
                             </div>
                             <div class="travel-button mt-auto">
-                                <a href="" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
@@ -105,7 +105,7 @@
                                 NUSA PENIDA
                             </div>
                             <div class="travel-button mt-auto">
-                                <a href="" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
@@ -122,7 +122,7 @@
                                 DUBAI
                             </div>
                             <div class="travel-button mt-auto">
-                                <a href="" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>

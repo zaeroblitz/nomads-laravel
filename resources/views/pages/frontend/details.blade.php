@@ -147,7 +147,7 @@
 
                         <!-- Button -->
                         <div class="join-container justify-content-center row mt-2">
-                            <a href="checkout.html" class="btn btn-join">Join Now</a>
+                            <a href="{{ route('checkout') }}" class="btn btn-join">Join Now</a>
                         </div>
                     </div>
                 </div>
