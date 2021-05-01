@@ -1,5 +1,5 @@
 @extends('layouts.checkout')
-@section('name', 'NOMADS Checkout')
+@section('title', 'NOMADS Checkout')
 
 @section('content')
 <main>
@@ -192,7 +192,7 @@
 
                     <!-- Button -->
                     <div class="justify-content-center row mt-2">
-                        <a href="success_checkout.html" class="btn btn-join">I Have Made Payment</a>
+                        <a href="{{ route('success-checkout') }}" class="btn btn-join">I Have Made Payment</a>
                     </div>
                     <div class="justify-content-center row mt-2">
                         <a href="details.html" class="btn btn-cancel">Cancel Booking</a>
