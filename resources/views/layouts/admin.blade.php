@@ -35,7 +35,7 @@
             </div>
             <!-- End of Main Content -->
 
-           @include('includes.admin.footer')
+            @include('includes.admin.footer')
 
         </div>
         <!-- End of Content Wrapper -->
@@ -61,8 +61,11 @@
                 </div>
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <form action="{{ url('logout') }}" method="POST">
+                        @csrf
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Logout</button>
+                    </form>
                 </div>
             </div>
         </div>
