@@ -21,6 +21,7 @@
                                 <th>ID</th>
                                 <th>Title</th>
                                 <th>Location</th>
+                                <th>About</th>
                                 <th>Featured Event</th>
                                 <th>Language</th>
                                 <th>Foods</th>
@@ -37,6 +38,7 @@
                             <td>{{ $item->id }}</td>
                             <td>{{ $item->title }}</td>
                             <td>{{ $item->location }}</td>
+                            <td>{{ $item->about }}</td>
                             <td>{{ $item->featured_event }}</td>
                             <td>{{ $item->language }}</td>
                             <td>{{ $item->foods }}</td>
@@ -50,6 +52,7 @@
                                 </a>
                                 <form action="{{ route('travel-package.destroy', $item->id) }}" method="POST" class="d-inline">
                                     @csrf
+                                    @method('delete')
                                     <button class="btn btn-danger">
                                         <i class="fa fa-trash"></i>
                                     </button>
