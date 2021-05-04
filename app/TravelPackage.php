@@ -15,5 +15,5 @@ class TravelPackage extends Model
         'price', 
     ];
 
-    protected $hidde = [];
+    protected $hidden = [];
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\TravelPackageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,5 +30,7 @@ Route::prefix('admin')
     ->group(function () {
         Route::get('/', 'DashboardController@index')
             ->name('dashboard');
+
+        Route::resource('travel-package', 'TravelPackageController');
     });
 Auth::routes(['verify' => true]);
