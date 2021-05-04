@@ -36,7 +36,7 @@
                     <div class="form-group">
                         <label for="about">About</label>
                         <textarea name="about" rows="10" id="about"
-                            class="d-block w-100 form-control">{{ old('value') }}</textarea>
+                            class="d-block w-100 form-control">{{ old('about') }}</textarea>
                     </div>
                     <div class="form-group">
                         <label for="featured_event">Featured Event</label>
@@ -50,8 +50,8 @@
                     </div>
                     <div class="form-group">
                         <label for="foods">Foods</label>
-                        <input type="text" class="form-control" name="foods" id="foods" placeholder="foods"
-                            value="{{ old('Foods') }}">
+                        <input type="text" class="form-control" name="foods" id="foods" placeholder="Foods"
+                            value="{{ old('foods') }}">
                     </div>
                     <div class="form-group">
                         <label for="departure_date">Departure Date</label>

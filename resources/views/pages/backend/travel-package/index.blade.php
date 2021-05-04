@@ -15,38 +15,38 @@
         <div class="row">
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered" width='100%' cellspacing='0'>
+                    <table class="table table-bordered text-center" width='100%' cellspacing='0'>
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Location</th>
-                                <th>About</th>
-                                <th>Featured Event</th>
-                                <th>Language</th>
-                                <th>Foods</th>
-                                <th>Departure Date</th>
-                                <th>Duration</th>
-                                <th>Type</th>
-                                <th>Price</th>
-                                <th>Action</th>
+                                <th class="align-middle">ID</th>
+                                <th class="align-middle">Title</th>
+                                <th class="align-middle">Location</th>
+                                <th class="align-middle">About</th>
+                                <th class="align-middle">Featured Event</th>
+                                <th class="align-middle">Language</th>
+                                <th class="align-middle">Foods</th>
+                                <th class="align-middle">Departure Date</th>
+                                <th class="align-middle">Duration</th>
+                                <th class="align-middle">Type</th>
+                                <th class="align-middle">Price</th>
+                                <th class="align-middle">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                            @forelse ($items as $item)
                            <tr>
-                            <td>{{ $item->id }}</td>
-                            <td>{{ $item->title }}</td>
-                            <td>{{ $item->location }}</td>
-                            <td>{{ $item->about }}</td>
-                            <td>{{ $item->featured_event }}</td>
-                            <td>{{ $item->language }}</td>
-                            <td>{{ $item->foods }}</td>
-                            <td>{{ $item->departure_date }}</td>
-                            <td>{{ $item->duration }}</td>
-                            <td>{{ $item->type }}</td>
-                            <td>{{ $item->price }}</td>
-                            <td>
+                            <td class="align-middle">{{ $item->id }}</td>
+                            <td class="align-middle">{{ $item->title }}</td>
+                            <td class="align-middle">{{ $item->location }}</td>
+                            <td class="align-middle">{{ $item->about }}</td>
+                            <td class="align-middle">{{ $item->featured_event }}</td>
+                            <td class="align-middle">{{ $item->language }}</td>
+                            <td class="align-middle">{{ $item->foods }}</td>
+                            <td class="align-middle">{{ $item->departure_date }}</td>
+                            <td class="align-middle">{{ $item->duration }}</td>
+                            <td class="align-middle">{{ $item->type }}</td>
+                            <td class="align-middle">{{ $item->price }}</td>
+                            <td class="align-middle">
                                 <a href="{{ route('travel-package.edit', $item->id) }}" class="btn btn-info">
                                     <i class="fa fa-pencil-alt"></i>
                                 </a>

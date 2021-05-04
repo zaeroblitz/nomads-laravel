@@ -85,7 +85,7 @@ class TravelPackageController extends Controller
 
         $item = TravelPackage::findOrFail($id);
         $item->update($data);
-        
+
         return redirect()->route('travel-package.index');
     }
 
@@ -97,6 +97,10 @@ class TravelPackageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = TravelPackage::findOrFail($id);
+
+        $item->delete();
+
+        return redirect()->route('travel-package.index');
     }
 }
