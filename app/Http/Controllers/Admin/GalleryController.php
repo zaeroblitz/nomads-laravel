@@ -18,7 +18,7 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        $items = Gallery::with(['travel_package'])->get();
+        $items = Gallery::with(['travel_package'])->orderBy('travel_packages_id')->paginate(5);
 
         return view('pages.backend.gallery.index', compact('items'));
     }

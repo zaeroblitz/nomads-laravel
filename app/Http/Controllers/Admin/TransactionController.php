@@ -86,7 +86,7 @@ class TransactionController extends Controller
      */
     public function update(TransactionRequest $request, $id)
     {   
-        $data = $request->all();
+        $data = $request->paginate(5);
 
         $item = Transaction::findOrFail($id);
         $item->update($data);

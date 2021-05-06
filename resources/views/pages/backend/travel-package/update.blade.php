@@ -30,6 +30,11 @@
                             value="{{ $item->title }}">
                     </div>
                     <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control" name="country" id="country" placeholder="Country"
+                            value="{{ $item->country }}">
+                    </div>
+                    <div class="form-group">
                         <label for="location">Location</label>
                         <input type="text" class="form-control" name="location" id="location" placeholder="Location"
                             value="{{ $item->location }}">

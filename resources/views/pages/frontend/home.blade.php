@@ -61,73 +61,28 @@
         <section class="section-popular-content" id="popularContent">
             <div class="container">
                 <div class="section-popular-travel row justify-content-center">
-                    <div class="col-sm-6 col-md-4 col-lg-3 py-sm-4 py-md-2 py-lg-0">
-                        <div class="card-travel text-center d-flex flex-column"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(frontend/images/Deratan-Bali@2x.png)">
-                            <div class="travel-country">
-                                INDONESIA
-                            </div>
-                            <div class="travel-location">
-                                DERATAN, BALI
-                            </div>
-                            <div class="travel-button mt-auto">
-                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
+                    @foreach ($items as $item)
                     <div class="col-sm-6 col-md-4 col-lg-3 py-sm-4 py-md-2 py-lg-0">
                         <div class="card-travel text-center d-flex flex-column"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(frontend/images/Bromo-Malang@2x.png)">
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                            url('{{ $item->galleries->count() ?  Storage::url($item->galleries->first()->image) : '' }}');">
                             <div class="travel-country">
-                                INDONESIA
+                                {{ $item->country }}
                             </div>
                             <div class="travel-location">
-                                BROMO, MALANG
+                                {{ $item->location }}
                             </div>
                             <div class="travel-button mt-auto">
-                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
+                                <a href="{{ route('detail', $item->slug) }}" class="btn btn-travel-details px-4">
                                     View Details
                                 </a>
                             </div>
                         </div>
                     </div>
+                    @endforeach
 
-                    <div class="col-sm-6 col-md-4 col-lg-3 py-sm-4 py-md-2 py-lg-0">
-                        <div class="card-travel text-center d-flex flex-column"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(frontend/images/Nusa-Penida@2x.png)">
-                            <div class="travel-country">
-                                INDONESIA
-                            </div>
-                            <div class="travel-location">
-                                NUSA PENIDA
-                            </div>
-                            <div class="travel-button mt-auto">
-                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-3 py-sm-4 py-md-2 py-lg-0">
-                        <div class="card-travel text-center d-flex flex-column"
-                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(frontend/images/Dubai@2x.png)">
-                            <div class="travel-country">
-                                MIDDLE EAST
-                            </div>
-                            <div class="travel-location">
-                                DUBAI
-                            </div>
-                            <div class="travel-button mt-auto">
-                                <a href="{{ route('detail') }}" class="btn btn-travel-details px-4">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             </div>

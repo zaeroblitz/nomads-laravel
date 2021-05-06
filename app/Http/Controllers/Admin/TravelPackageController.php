@@ -17,7 +17,7 @@ class TravelPackageController extends Controller
      */
     public function index()
     {
-        $items = TravelPackage::all();
+        $items = TravelPackage::paginate(5);
 
         return view('pages.backend.travel-package.index', compact('items'));
     }

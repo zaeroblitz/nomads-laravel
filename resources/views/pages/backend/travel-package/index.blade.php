@@ -20,6 +20,7 @@
                             <tr>
                                 <th class="align-middle">ID</th>
                                 <th class="align-middle">Title</th>
+                                <th class="align-middle">Country</th>
                                 <th class="align-middle">Location</th>
                                 <th class="align-middle">About</th>
                                 <th class="align-middle">Featured Event</th>
@@ -37,8 +38,9 @@
                            <tr>
                             <td class="align-middle">{{ $item->id }}</td>
                             <td class="align-middle">{{ $item->title }}</td>
+                            <td class="align-middle">{{ $item->country }}</td>
                             <td class="align-middle">{{ $item->location }}</td>
-                            <td class="align-middle">{{ $item->about }}</td>
+                            <td class="align-middle">{{ Str::limit($item->about, 50, '...') }}</td>
                             <td class="align-middle">{{ $item->featured_event }}</td>
                             <td class="align-middle">{{ $item->language }}</td>
                             <td class="align-middle">{{ $item->foods }}</td>
@@ -66,6 +68,7 @@
                            @endforelse
                         </tbody>
                     </table>
+                    {{ $items->links() }}
                 </div>
             </div>
         </div>
