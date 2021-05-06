@@ -1,8 +1,8 @@
 <!-- Navbar -->
 <div class="container">
     <nav class="row navbar navbar-expand-lg navbar-light bg-light">
-        <a href="#" class="navbar-brand">
-            <img src="frontend/images/logo_nomads@2x.png" alt="Logo Nomads" />
+        <a href="{{ route('home') }}" class="navbar-brand">
+            <img src="{{ url('frontend/images/logo_nomads@2x.png') }}" alt="Logo Nomads" />
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb">

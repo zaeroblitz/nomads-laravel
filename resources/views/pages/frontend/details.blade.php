@@ -3,7 +3,7 @@
 @section('title', 'Paket Travel Detail')
 
     @push('prepend-style')
-        <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+        <link rel="stylesheet" href="{{ url('frontend/libraries/xzoom/xzoom.css') }}">
         <link rel="stylesheet" href="{{ url('frontend/styles/details.css') }}">
     @endpush
 
@@ -34,75 +34,53 @@
                         <div class="card card-details">
 
                             <!-- Card Header -->
-                            <h3>Nusa Penida</h3>
-                            <p>Republic of Indonesia Raya</p>
+                            <h3>{{ $item->location }}</h3>
+                            <p>{{ $item->country }}</p>
 
                             <!-- Gallery -->
+                            @if ($item->galleries->count())
                             <div class="gallery">
                                 <div class="xzoom-container">
-                                    <img src="frontend/images/NusaPenida1Original.png" class="xzoom" id="xzoom-default"
-                                        xoriginal="frontend/images/NusaPenida1Original.png">
+                                    <img src="{{ Storage::url($item->galleries->first()->image) }}" class="xzoom" id="xzoom-default"
+                                        xoriginal="{{ Storage::url($item->galleries->first()->image) }}">
                                 </div>
+                                
                                 <div class="xzoom-thumbnails">
-                                    <a href="frontend/images/NusaPenida1Original.png">
-                                        <img src="frontend/images/NusaPenida1Preview.png" class="xzoom-gallery" width="120"
-                                            xpreview="frontend/images/NusaPenida1Original.png">
+                                    @foreach ($item->galleries as $gallery)
+                                    <a href="{{ Storage::url($gallery->image) }}">
+                                        <img src="{{ Storage::url($gallery->image) }}" class="xzoom-gallery" width="120" height="80"
+                                            xpreview="{{ Storage::url($gallery->image) }}">
                                     </a>
-                                    <a href="frontend/images/NusaPenida2Original.jpg">
-                                        <img src="frontend/images/NusaPenida2Preview.png" class="xzoom-gallery" width="120"
-                                            xpreview="frontend/images/NusaPenida2Original.jpg">
-                                    </a>
-                                    <a href="frontend/images/NusaPenida3Original.jpg">
-                                        <img src="frontend/images/NusaPenida3Preview.png" class="xzoom-gallery" width="120"
-                                            xpreview="frontend/images/NusaPenida3Original.jpg">
-                                    </a>
-                                    <a href="frontend/images/NusaPenida4Original.jpg">
-                                        <img src="frontend/images/NusaPenida4Preview.png" class="xzoom-gallery" width="120"
-                                            xpreview="frontend/images/NusaPenida4Original.jpg">
-                                    </a>
-                                    <a href="frontend/images/NusaPenida5Original.jpg">
-                                        <img src="frontend/images/NusaPenida5Preview.png" class="xzoom-gallery" width="120"
-                                            xpreview="frontend/images/NusaPenida5Original.jpg">
-                                    </a>
+                                    @endforeach        
                                 </div>
                             </div>
+                            @endif                           
 
                             <!-- Card Detail -->
                             <h4>Tentang Wisata</h4>
-                            <p>
-                                Nusa Penida is an island southeast of Indonesia’s island Bali and a district of
-                                Klungkung
-                                Regency that includes the neighbouring small island of Nusa Lembongan. The Badung
-                                Strait separates the island and Bali. The interior of Nusa Penida is hilly with a
-                                maximum
-                                altitude of 524 metres. It is drier than the nearby island of Bali.
-                            </p>
-                            <p>
-                                Bali and a district of Klungkung Regency that includes the neighbouring small island of
-                                Nusa Lembongan. The Badung Strait separates the island and Bali.
-                            </p>
+                            {{ nl2br($item->about) }}
 
                             <!-- Card Icon -->
                             <div class="features row justify-content-center align-items-center">
                                 <div class="col-md-4 p-3">
-                                    <img src="frontend/images/ic_event.png" alt="Icon Event">
+                                    <img src="{{ url('frontend/images/ic_event.png') }}" alt="Icon Event">
                                     <div class="description">
                                         <h5>Featured Event</h5>
-                                        <p>Tari Kecak</p>
+                                        <p>{{ $item->featured_event }}</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 p-3">
-                                    <img src="frontend/images/ic_language.png" alt="Icon Language">
+                                    <img src="{{ url('frontend/images/ic_language.png') }}" alt="Icon Language">
                                     <div class="description">
                                         <h5>Language</h5>
-                                        <p>Bahasa Indonesia</p>
+                                        <p>{{ $item->language }}</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 p-3">
-                                    <img src="frontend/images/ic_foods.png" alt="Icon Foods">
+                                    <img src="{{ url('frontend/images/ic_foods.png') }}" alt="Icon Foods">
                                     <div class="description">
                                         <h5>Foods</h5>
-                                        <p>Local Foods</p>
+                                        <p>{{ $item->foods }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -114,11 +92,11 @@
                             <!-- Card Members -->
                             <h4>Members are going</h4>
                             <div class="members-photo">
-                                <img src="frontend/images/Member1.png" width="40" height="40" class="rounded-circle">
-                                <img src="frontend/images/Member2.png" width="40" height="40" class="rounded-circle">
-                                <img src="frontend/images/Member3.png" width="40" height="40" class="rounded-circle">
-                                <img src="frontend/images/Member4.png" width="40" height="40" class="rounded-circle">
-                                <img src="frontend/images/MemberOthers.png" width="40" height="40" class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member1.png') }}" width="40" height="40" class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member2.png') }}" width="40" height="40" class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member3.png') }}" width="40" height="40" class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member4.png') }}" width="40" height="40" class="rounded-circle">
+                                <img src="{{ url('frontend/images/MemberOthers.png') }}" width="40" height="40" class="rounded-circle">
                             </div>
 
                             <hr>
@@ -128,19 +106,19 @@
                             <table>
                                 <tr>
                                     <th width="50%">Date of Departure</th>
-                                    <td width="50% text-right">22 Aug, 2021</td>
+                                    <td width="50% text-right">{{ \Carbon\Carbon::create($item->departure_date)->format('d M, Y') }}</td>
                                 </tr>
                                 <tr>
                                     <th width="50%">Duration</th>
-                                    <td width="50% text-right">4D 3N</td>
+                                    <td width="50% text-right">{{ $item->duration }}</td>
                                 </tr>
                                 <tr>
                                     <th width="50%">Type</th>
-                                    <td width="50% text-right">Open Trip</td>
+                                    <td width="50% text-right">{{ $item->type }}</td>
                                 </tr>
                                 <tr>
                                     <th width="50%">Price</th>
-                                    <td width="50% text-right">$80,00 / person</td>
+                                    <td width="50% text-right">${{ $item->price }} / person</td>
                                 </tr>
                             </table>
                         </div>

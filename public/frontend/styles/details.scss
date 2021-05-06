@@ -176,6 +176,10 @@ main {
         .xzoom-thumbnails {
 
             .xzoom-gallery {
+                width: 120px;
+                height: 80px;
+                object-fit: cover;
+                background-size: cover;
                 box-shadow: none;
                 border-radius: 6px;
             }
