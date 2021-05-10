@@ -39,26 +39,30 @@
 
                             <!-- Gallery -->
                             @if ($item->galleries->count())
-                            <div class="gallery">
-                                <div class="xzoom-container">
-                                    <img src="{{ Storage::url($item->galleries->first()->image) }}" class="xzoom" id="xzoom-default"
-                                        xoriginal="{{ Storage::url($item->galleries->first()->image) }}">
+                                <div class="gallery">
+                                    <div class="xzoom-container">
+                                        <img src="{{ Storage::url($item->galleries->first()->image) }}" class="xzoom"
+                                            id="xzoom-default"
+                                            xoriginal="{{ Storage::url($item->galleries->first()->image) }}">
+                                    </div>
+
+                                    <div class="xzoom-thumbnails">
+                                        @foreach ($item->galleries as $gallery)
+                                            <a href="{{ Storage::url($gallery->image) }}">
+                                                <img src="{{ Storage::url($gallery->image) }}" class="xzoom-gallery"
+                                                    width="120" height="80"
+                                                    xpreview="{{ Storage::url($gallery->image) }}">
+                                            </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                                
-                                <div class="xzoom-thumbnails">
-                                    @foreach ($item->galleries as $gallery)
-                                    <a href="{{ Storage::url($gallery->image) }}">
-                                        <img src="{{ Storage::url($gallery->image) }}" class="xzoom-gallery" width="120" height="80"
-                                            xpreview="{{ Storage::url($gallery->image) }}">
-                                    </a>
-                                    @endforeach        
-                                </div>
-                            </div>
-                            @endif                           
+                            @endif
 
                             <!-- Card Detail -->
                             <h4>Tentang Wisata</h4>
-                            {{ nl2br($item->about) }}
+                            <p class="about">
+                                {{ nl2br($item->about) }}
+                            </p>
 
                             <!-- Card Icon -->
                             <div class="features row justify-content-center align-items-center">
@@ -92,11 +96,16 @@
                             <!-- Card Members -->
                             <h4>Members are going</h4>
                             <div class="members-photo">
-                                <img src="{{ url('frontend/images/Member1.png') }}" width="40" height="40" class="rounded-circle">
-                                <img src="{{ url('frontend/images/Member2.png') }}" width="40" height="40" class="rounded-circle">
-                                <img src="{{ url('frontend/images/Member3.png') }}" width="40" height="40" class="rounded-circle">
-                                <img src="{{ url('frontend/images/Member4.png') }}" width="40" height="40" class="rounded-circle">
-                                <img src="{{ url('frontend/images/MemberOthers.png') }}" width="40" height="40" class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member1.png') }}" width="40" height="40"
+                                    class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member2.png') }}" width="40" height="40"
+                                    class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member3.png') }}" width="40" height="40"
+                                    class="rounded-circle">
+                                <img src="{{ url('frontend/images/Member4.png') }}" width="40" height="40"
+                                    class="rounded-circle">
+                                <img src="{{ url('frontend/images/MemberOthers.png') }}" width="40" height="40"
+                                    class="rounded-circle">
                             </div>
 
                             <hr>
@@ -106,7 +115,8 @@
                             <table>
                                 <tr>
                                     <th width="50%">Date of Departure</th>
-                                    <td width="50% text-right">{{ \Carbon\Carbon::create($item->departure_date)->format('d M, Y') }}</td>
+                                    <td width="50% text-right">
+                                        {{ \Carbon\Carbon::create($item->departure_date)->format('d M, Y') }}</td>
                                 </tr>
                                 <tr>
                                     <th width="50%">Duration</th>

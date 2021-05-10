@@ -14,9 +14,9 @@
             <br>
             moment you never see before
         </p>
-        <button class="btn btn-warning btn-get-started mt-4 px-3">
-            Get Started
-        </button>
+        <a href="#popular" class="btn btn-warning btn-get-started mt-4 px-3">
+            Browse Popular
+        </a>
     </header>
 
     <main>
@@ -146,7 +146,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-8">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-8">
                         <div class="card section-testimonial-card">
                             <div class="card-profile-pic">
                                 <img src="frontend/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Profile Picture">
@@ -190,12 +190,26 @@
 
         <!-- Buttons  -->
         <section class="section-buttons">
+
+            @guest
             <div class="container">
                 <div class="row justify-content-center">
                     <a href="#" class="btn btn-need-help mr-2">I Need Help</a>
-                    <a href="#" class="btn btn-get-started ml-2">Get Started</a>
+                    <a href="{{ url('register') }}" class="btn btn-get-started ml-2">Get Started</a>
                 </div>
             </div>
+            @endguest
+
+            @auth
+            <div class="container">
+                <div class="row justify-content-center">
+                    <a href="#" class="btn btn-need-help mr-2">I Need Help</a>
+                    <a href="#popular" class="btn btn-get-started ml-2">Browse Popular</a>
+                </div>
+            </div>
+            @endauth
+
+            
         </section>
 
     </main>

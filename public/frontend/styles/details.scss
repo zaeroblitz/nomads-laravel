@@ -80,6 +80,12 @@ main {
 
     .card-details {
 
+        .about {
+            font-size: 18px;
+            color: $grey_color_font;
+            text-align: justify;
+        }
+
         .features {
             margin-top: 30px;
 
@@ -179,6 +185,7 @@ main {
                 width: 120px;
                 height: 80px;
                 object-fit: cover;
+                background-position: center;
                 background-size: cover;
                 box-shadow: none;
                 border-radius: 6px;

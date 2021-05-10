@@ -60,6 +60,12 @@ main {
   font-size: 18px;
 }
 
+.section-details-content .card-details .about {
+  font-size: 18px;
+  color: #B1B1B1;
+  text-align: justify;
+}
+
 .section-details-content .card-details .features {
   margin-top: 30px;
 }
@@ -151,6 +157,12 @@ main {
 }
 
 .section-details-content .gallery .xzoom-thumbnails .xzoom-gallery {
+  width: 120px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: cover;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 6px;
