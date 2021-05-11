@@ -179,10 +179,10 @@ main {
             }
         }
 
-        .xzoom-thumbnails {
+        .xzoom-thumbnails {            
 
             .xzoom-gallery {
-                width: 120px;
+                width: 125px;
                 height: 80px;
                 object-fit: cover;
                 background-position: center;
@@ -263,33 +263,43 @@ main {
         }
     }
 
+    .join-container {
 
-    .btn-join {
-        width: 85%;
-        padding: 10px;
-        color: $white_color;
-        background-color: $orange_color;
-        border-radius: 12px;
-        font-weight: bold;
-
-        &:hover {
+        .btn-join, .btn-login {
+            width: 85%;
+            padding: 10px;
+            margin-left: 7.5%;
+            margin-right: 7.5%;
             color: $white_color;
-            background-color: $orange_color_hover;
+            background-color: $orange_color;
+            border-radius: 12px;
             font-weight: bold;
+    
+            &:hover {
+                color: $white_color;
+                background-color: $orange_color_hover;
+                font-weight: bold;
+            }
+        }
+    
+        .btn-login {
+            width: 75%;
+            margin-left: 12.5%;
+            margin-right: 12.5%;
+            font-size: 16px;
+        }
+    
+        .btn-cancel {
+            width: 70%;
+            padding: 10px;
+            color: $grey_color_font;
+            background-color: $light_grey_color_button;
+            border-radius: 12px;
+    
+            &:hover {
+                color: $light_grey_color_button;
+                background-color: $dark_grey_color_button;
+            }
         }
     }
-
-    .btn-cancel {
-        width: 70%;
-        padding: 10px;
-        color: $grey_color_font;
-        background-color: $light_grey_color_button;
-        border-radius: 12px;
-
-        &:hover {
-            color: $light_grey_color_button;
-            background-color: $dark_grey_color_button;
-        }
-    }
-
 }

@@ -157,7 +157,7 @@ main {
 }
 
 .section-details-content .gallery .xzoom-thumbnails .xzoom-gallery {
-  width: 120px;
+  width: 125px;
   height: 80px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -229,22 +229,31 @@ main {
   color: #fb8500;
 }
 
-.section-details-content .btn-join {
+.section-details-content .join-container .btn-join, .section-details-content .join-container .btn-login {
   width: 85%;
   padding: 10px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
   color: #FFFFFF;
   background-color: #fb8500;
   border-radius: 12px;
   font-weight: bold;
 }
 
-.section-details-content .btn-join:hover {
+.section-details-content .join-container .btn-join:hover, .section-details-content .join-container .btn-login:hover {
   color: #FFFFFF;
   background-color: #c26b09;
   font-weight: bold;
 }
 
-.section-details-content .btn-cancel {
+.section-details-content .join-container .btn-login {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  font-size: 16px;
+}
+
+.section-details-content .join-container .btn-cancel {
   width: 70%;
   padding: 10px;
   color: #B1B1B1;
@@ -252,7 +261,7 @@ main {
   border-radius: 12px;
 }
 
-.section-details-content .btn-cancel:hover {
+.section-details-content .join-container .btn-cancel:hover {
   color: #F2F2F2;
   background-color: #757575;
 }

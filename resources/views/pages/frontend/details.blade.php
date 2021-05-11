@@ -50,7 +50,6 @@
                                         @foreach ($item->galleries as $gallery)
                                             <a href="{{ Storage::url($gallery->image) }}">
                                                 <img src="{{ Storage::url($gallery->image) }}" class="xzoom-gallery"
-                                                    width="120" height="80"
                                                     xpreview="{{ Storage::url($gallery->image) }}">
                                             </a>
                                         @endforeach
@@ -128,15 +127,27 @@
                                 </tr>
                                 <tr>
                                     <th width="50%">Price</th>
-                                    <td width="50% text-right">${{ $item->price }} / person</td>
+                                    <td width="50% text-right">${{ $item->price }},00 / person</td>
                                 </tr>
                             </table>
                         </div>
 
-                        <!-- Button -->
-                        <div class="join-container justify-content-center row mt-2">
-                            <a href="{{ route('checkout') }}" class="btn btn-join">Join Now</a>
+                        <!-- Button Checkout-->
+                        <div class="join-container">
+                            @auth
+                                <form action="{{ route('checkout-process', $item->id) }}" method="POST">
+                                    @csrf
+                                    <button class="btn btn-join justify-content-center mt-2" type="submit">Join Now</button>
+                                </form>
+                            @endauth
+
+                            @guest
+                            <a href="{{ route('login') }}" class="btn btn-login justify-content-center mt-2">Login to Join</a>    
+                            @endguest
                         </div>
+                        {{-- <div class="join-container justify-content-center row mt-2">
+                            <a href="{{ route('checkout') }}" class="btn btn-join">Join Now</a>
+                        </div> --}}
                     </div>
                 </div>
             </div>

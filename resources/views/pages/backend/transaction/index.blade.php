@@ -56,7 +56,7 @@
                            @endforelse
                         </tbody>
                     </table>
-                    {{  $items->links() }}
+                    {{-- {{  $items->links() }} --}}
                 </div>
             </div>
         </div>
